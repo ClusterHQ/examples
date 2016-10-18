@@ -6,7 +6,7 @@
 ### Install `fli`
 
 - Download and [Install Vagrant](https://www.vagrantup.com/)
-- Set vm.config.box= “ubuntu/xenial64” in your Vagrantfile.
+- Set `vm.config.box= “ubuntu/xenial64”` in your `Vagrantfile`.
 - `vagrant up`
 - `vagrant ssh`
 - `sudo apt install docker.io zfsutils-linux`
@@ -15,8 +15,8 @@
 - `sudo su -` 
 - `alias fli="docker run --privileged -v /chq/:/chq/ -v /root:/root fli"`
 - `fli setup --zpool chq`
-- `fli config --url  http://flockerhub.com
-- `fli config --token /path/to/your/authtoken.token
+- `fli config --url  http://flockerhub.com`
+- `fli config --token /path/to/your/authtoken.token`
 
 ### (optional) Get `fli-docker`
 
