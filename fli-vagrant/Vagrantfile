@@ -66,7 +66,7 @@ Vagrant.configure(2) do |config|
      sudo rm -rf $HOME/zfs.disk
      sudo fallocate -l 3G $HOME/zfs.disk && zpool create -f chq $HOME/zfs.disk
      echo "Getting fli ready"
-     sudo docker pull clusterhq/fli:latest
-     sudo echo "alias fli='docker run --privileged -v /chq/:/chq/ -v /root:/root clusterhq/fli'" >> /root/.bashrc
+     sudo docker login -e="." -u="clusterhq_prod+pull_fli" -p="99E32PIAJQB83WB3YWBD0XW2X6EJMC7CRK1ZVVNQRN27JLLMF2DPJ035SG4O1QKV" quay.io
+     sudo echo "alias fli='docker run --privileged -v /chq/:/chq/ -v /root:/root -v /lib/modules:/lib/modules quay.io/clusterhq_prod/fli:babb6ba89b2b80f51c90ee14ea1eb5d12d175df6'"
    SHELL
 end
