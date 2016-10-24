@@ -11,18 +11,19 @@
 ### On the Ansible control host
 
 Install Ansible on Mac OSX control machine. 
-- `brew install ansible`
+
+`$ brew install ansible`
 
 For other distrobutions, check here: [Getting Ansible](http://docs.ansible.com/ansible/intro_installation.html#getting-ansible)
 
-- `git clone https://github.com/ClusterHQ/examples`
-- `cd examples/fli-ansble`
+`$ git clone https://github.com/ClusterHQ/examples`
+`$ cd examples/fli-ansble`
 
 #### Configure and Run `fli`
 
-`export ANSIBLE_HOST_KEY_CHECKING=False`
+`$ export ANSIBLE_HOST_KEY_CHECKING=False`
 
-`vi ansible-hosts # change <your-servers-ip>`
+`$ vi ansible-hosts # change <your-servers-ip>`
 
 > Note: you only need `--private-key` if you need a key to login as `root` to your servers.
 
