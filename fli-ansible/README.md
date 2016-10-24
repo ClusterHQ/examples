@@ -18,9 +18,11 @@ For other distrobutions, check here: [Getting Ansible](http://docs.ansible.com/a
 - `git clone https://github.com/ClusterHQ/examples`
 - `cd examples/fli-ansble`
 
-#### Run `fli`
+#### Configure and Run `fli`
 
 `export ANSIBLE_HOST_KEY_CHECKING=False`
+
+`vi ansible-hosts # change <your-servers-ip>`
 
 > Note: you only need `--private-key` if you need a key to login as `root` to your servers.
 

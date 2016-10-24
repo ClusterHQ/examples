@@ -1,2 +1,2 @@
 [servers]
-host1 ansible_ssh_host=54.165.150.59
+host1 ansible_ssh_host=<your-servers-ip>
