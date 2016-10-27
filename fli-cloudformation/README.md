@@ -3,17 +3,17 @@
 
 1. Go to https://console.aws.amazon.com/cloudformation
 
-2. Click `Create Stack`
+2. Click "Create Stack"
 
-3. Choose Upload a template, and choose the `fli-CloudFormation-Ubuntu16.04` tempate.
+3. Choose "Upload a template", and choose the `fli-CloudFormation-Ubuntu16.04` template from this repo.
 
-4. Click Next
+4. Click "Next"
 
-5. Choose your SSH Key and give your Stack and name.
+5. Choose your SSH Key and give your Stack a name.
 
-6. Create the Stack.
+6. "Create" the Stack.
 
-7. When finished, look for the DNS name in `Outputs`
+7. When finished, look for the DNS name in "Outputs"
 
 ```
 laptop$ ssh -i ~/yourkey.pem ubunutu@dns-name-from-outputs
