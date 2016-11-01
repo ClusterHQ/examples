@@ -1,0 +1,20 @@
+---
+- hosts: servers
+  remote_user: root
+  tasks:
+  - name: install docker
+    apt: name=docker.io state=latest
+  - name: install zfs utilities
+    apt: name=zfsutils-linux state=latest
+  - name: prepare zpool
+    shell: fallocate -l 3G /root/zfs.disk && zpool create -f chq /root/zfs.disk
+    args:
+      executable: /bin/bash
+  - name: create alias for logged in root users
+    shell: echo "alias fli='docker run --rm --privileged -v /chq/:/chq/:shared -v /root:/root -v /lib/modules:/lib/modules clusterhq/fli'" >> /root/.bashrc
+    args:
+      executable: /bin/bash
+  - name: place fli binary
+    shell: docker create --name fli-bin clusterhq/fli && docker cp fli-bin:/opt/clusterhq/bin/fli /usr/bin/ && chmod +x /usr/bin/fli && docker rm -f fli-bin
+    args:
+      executable: /bin/bash
