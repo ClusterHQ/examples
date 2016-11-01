@@ -1,5 +1,5 @@
 
-# How to use this repository
+# Getting started with `fli` and AWS Cloudformation and Ubuntu 16.04
 
 1. Go to https://console.aws.amazon.com/cloudformation
 
@@ -21,6 +21,7 @@ Welcome to Ubuntu 16.04.1 LTS (GNU/Linux 4.4.0-31-generic x86_64)
 
 ubuntu@ec2node$ sudo su
 root@ec2node$ fli setup -z chq
+root@ec2node$ fli config -u https://flockerhub.clusterhq.com
 root@ec2node$ fli setup config -t /root/your.token
 root@ec2node$ fli init My-First-Volumeset
 ```

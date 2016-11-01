@@ -1,5 +1,4 @@
-# Easily install `fli` on Ubuntu with Ansible
-
+# Getting started with `fli` on Ubuntu 16.04 with Ansible
 
 ## How to
 
@@ -10,16 +9,19 @@
 
 ### On the Ansible control host
 
+#### Mac OSX
+
 Install Ansible on Mac OSX control machine. 
 
 `$ brew install ansible`
 
+#### Other OS control host
 For other distrobutions, check here: [Getting Ansible](http://docs.ansible.com/ansible/intro_installation.html#getting-ansible)
+
+#### Configure and Run `fli`
 
 `$ git clone https://github.com/ClusterHQ/examples`
 `$ cd examples/fli-ansble`
-
-#### Configure and Run `fli`
 
 `$ export ANSIBLE_HOST_KEY_CHECKING=False`
 
@@ -67,6 +69,9 @@ host1 | SUCCESS | rc=0 >>
 $ ansible servers -i ${PWD}/ansible-hosts --private-key ~/your/key -a 'fli setup -z chq'
 host1 | SUCCESS | rc=0 >>
 
+$ ansible servers -i ${PWD}/ansible-hosts --private-key ~/your/key -a 'fli config -u https://flockerhub.clusterhq.com'
+host1 | SUCCESS | rc=0 >>
+
 $ ansible servers -i ${PWD}/ansible-hosts --private-key ~/your/key -a 'fli config -t /root/fh.token'
 host1 | SUCCESS | rc=0 >>
 
@@ -85,6 +90,7 @@ Or login to your server as root and you can now use fli.
 ```
 $ ssh -i ~/your/key root@<ip-of-server>
 server:$ fli setup -z chq
+server:$ fli config -u https://flockerhub.clusterhq.com
 server:$ fli config -t /root/fh.token
 server:$ fli init myVolumeset
 server:$ fli list -a
