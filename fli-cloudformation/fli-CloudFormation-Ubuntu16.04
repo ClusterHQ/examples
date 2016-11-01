@@ -182,10 +182,8 @@
               "#sleep because of https://github.com/docker/docker/issues/23793/n",
               "sleep 30\n",
               "systemctl restart docker\n",
-              "docker login -e='.' -u='clusterhq_prod+pull_fli' -p='99E32PIAJQB83WB3YWBD0XW2X6EJMC7CRK1ZVVNQRN27JLLMF2DPJ035SG4O1QKV' quay.io\n",
-              "docker pull quay.io/clusterhq_prod/fli:9a8d5fb6e8d65406e63c95c932ffe9f548c9dbfa\n",
-              "docker tag quay.io/clusterhq_prod/fli:9a8d5fb6e8d65406e63c95c932ffe9f548c9dbfa clusterhq/fli\n",
-              "echo \"alias fli='docker run --rm --privileged -v /chq/:/chq/:shared -v /root:/root -v /lib/modules:/lib/modules quay.io/clusterhq_prod/fli:9a8d5fb6e8d65406e63c95c932ffe9f548c9dbfa'\" >> /root/.bashrc\n",
+              "docker pull clusterhq/fli\n",
+              "echo \"alias fli='docker run --rm --privileged -v /chq/:/chq/:shared -v /root:/root -v /lib/modules:/lib/modules clusterhq/fli'\" >> /root/.bashrc\n",
               "zpool create -f -o ashift=12 -O recordsize=128k -O xattr=sa -m /chq chq /dev/xvdf\n"
               ]
             ]
