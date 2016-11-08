@@ -69,9 +69,6 @@ host1 | SUCCESS | rc=0 >>
 $ ansible servers -i ${PWD}/ansible-hosts --private-key ~/your/key -a 'fli setup -z chq'
 host1 | SUCCESS | rc=0 >>
 
-$ ansible servers -i ${PWD}/ansible-hosts --private-key ~/your/key -a 'fli config -u https://flockerhub.clusterhq.com'
-host1 | SUCCESS | rc=0 >>
-
 $ ansible servers -i ${PWD}/ansible-hosts --private-key ~/your/key -a 'fli config -t /root/fh.token'
 host1 | SUCCESS | rc=0 >>
 
@@ -90,7 +87,6 @@ Or login to your server as root and you can now use fli.
 ```
 $ ssh -i ~/your/key root@<ip-of-server>
 server:$ fli setup -z chq
-server:$ fli config -u https://flockerhub.clusterhq.com
 server:$ fli config -t /root/fh.token
 server:$ fli init myVolumeset
 server:$ fli list -a
