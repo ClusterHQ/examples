@@ -15,13 +15,15 @@
 - `laptop:$ vagrant ssh`
 - `ubuntu:~$ sudo su`
 - `root:~$ fli setup --zpool chq`
-- `root:~$ fli config --token /path/to/your/fh.token`
+
+Visit https://flockerhub.clusterhq.com to get started with your account and authentication token.
 
 ### (optional) Get started with `fli-docker`
 
-> Note: this tool works with docker-compose. [Install Docker Compose](https://docs.docker.com/compose/install/)
+Download the latest `fli-docker` release, see below lings for more information.
 
-Download the `fli-docker` binary from https://github.com/ClusterHQ/fli-docker/releases and move it to your bin directory. The releases are also available on Amazon S3.
+- https://github.com/ClusterHQ/fli-docker
+- https://github.com/ClusterHQ/fli-docker/releases
 
 ```
 $ wget https://s3.amazonaws.com/clusterhq-fli-docker/<RELEASE_VERSION>/fli-docker
@@ -31,9 +33,6 @@ $ chmod +x /usr/local/bin/fli-docker`
 
 #### Try some examples
 
-- `root:~$ git clone http://github.com/clusterhq/fli-docker`
-- `root:~$ cd fli-docker/examples/srvdata`
-- Modify the `fli-manifest.yml` with you snapshots or branches and volumeset.
-- `root:~$ fli-docker run -f fli-manifest.yml -p myprojectname -c`
+- http://github.com/clusterhq/fli-docker/examples/
 
 
