@@ -9,7 +9,7 @@
 
 - Download and [Install Vagrant](https://www.vagrantup.com/)
 - Install [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
-- `laptop:$ git checkout https://github.com/ClusterHQ/examples`
+- `laptop:$ git clone https://github.com/ClusterHQ/examples`
 - `laptop:$ cd fli-vagrant`
 - `laptop:$ vagrant up`
 - `laptop:$ vagrant ssh`
