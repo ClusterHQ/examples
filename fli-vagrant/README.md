@@ -9,7 +9,6 @@
 
 - Download and [Install Vagrant](https://www.vagrantup.com/)
 - Install [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
-- Make sure you have at least 1-2GB of memory to use.
 - `laptop:$ git clone https://github.com/ClusterHQ/examples`
 - `laptop:$ cd fli-vagrant`
 - `laptop:$ vagrant up`
