@@ -38,5 +38,5 @@ Visit https://flockerhub.clusterhq.com to get started with your account and auth
 ### Versions Verified
 
  - Vagrant 1.8.7
- - Virtualbox 5.0.26
+ - Virtualbox 5.0.26 and 5.1.8
 
