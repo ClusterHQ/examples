@@ -16,6 +16,27 @@
 - `ubuntu:~$ sudo su`
 - `root:~$ fli setup --zpool chq`
 
+You can visit [the rest of the fli documentation to continue](https://fli-docs.clusterhq.com/en/latest/GettingStarted.html#step-4-set-up-fli).
+
+#### Clean up or restart
+
+To clean up and re-provision your environment, perform the following.
+
+```
+laptop:$ vagrant destroy 
+laptop:$ vagrant up
+```
+
+To pause and later resume your environment, perform the following.
+```
+laptop:$ vagrant suspend
+laptop:$ vagrant resume
+```
+
 Visit https://flockerhub.clusterhq.com to get started with your account and authentication token.
 
+### Versions Verified
+
+ - Vagrant 1.8.7
+ - Virtualbox 5.0.26
 
