@@ -67,5 +67,6 @@ Vagrant.configure(2) do |config|
      sudo fallocate -l 5G $HOME/zfs.disk && zpool create -f chq $HOME/zfs.disk
      echo "Getting fli ready"
      sudo echo "alias fli='docker run --rm --privileged -v /chq/:/chq/:shared -v /root:/root -v /var/log/fli:/var/log/fli -v /lib/modules:/lib/modules clusterhq/fli'" >> /root/.bashrc
+     sudo echo "alias fli='sudo docker run --rm --privileged -v /chq/:/chq/:shared -v /var/log/fli:/var/log/fli -v /root:/root -v /lib/modules:/lib/modules clusterhq/fli'" >> /home/ubuntu/.bashrc
    SHELL
 end
