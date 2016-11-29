@@ -2,14 +2,14 @@
 
 ## How to
 
-### Pre-reqs
+### Prerequisites
 
-- One Ubuntu 16.04 server with a sudo non-root user and SSH keys, which you can set up by following this [initial server setup tutorial](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-16-04), including step 4.
+- You will need SSH access to one Ubuntu 16.04 server. You should use a non-root user account and that account should have permission to run commands as root, using sudo . You can set this up by following this [initial server setup tutorial](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-16-04), including step 4.
 - Also make sure to `sudo apt-get install python` because ansible needs python 2.7 on Ubuntu 16.04
 
-### On the Ansible control host
+### Install Ansible on a Control Host
 
-#### Mac OSX
+#### Mac OSX control host
 
 Install Ansible on Mac OSX control machine. 
 
