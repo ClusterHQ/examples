@@ -32,6 +32,6 @@
 - Submit a issue or PR on GitHub. We'd love your help.
 - You can also join us on the #clusterhq channel on the irc.freenode.net
 - Join our Slack community at https://slack.clusterhq.com/
-- Ask a question on the flockerhub-fli-users Google group
+- Ask a question on the [flockerhub-fli-users](https://groups.google.com/a/clusterhq.com/forum/#!forum/flockerhub-fli-users) Google group
 - Send us an email at support@clusterhq.com
 - Tweet us at @ClusterHQ
