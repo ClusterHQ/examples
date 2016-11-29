@@ -11,7 +11,7 @@
     args:
       executable: /bin/bash
   - name: create alias for logged in root users
-    shell: echo "alias fli='docker run --rm --privileged -v /chq/:/chq/:shared -v /root:/root -v /lib/modules:/lib/modules clusterhq/fli'" >> /root/.bashrc
+    shell: echo "alias fli='docker run --rm --privileged -v /chq/:/chq/:shared -v /var/log/fli:/var/log/fli -v /root:/root -v /lib/modules:/lib/modules clusterhq/fli'" >> /root/.bashrc
     args:
       executable: /bin/bash
   - name: place fli binary
