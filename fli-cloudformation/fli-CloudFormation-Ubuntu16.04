@@ -183,7 +183,7 @@
               "sleep 30\n",
               "systemctl restart docker\n",
               "docker pull clusterhq/fli\n",
-              "echo \"alias fli='docker run --rm --privileged -v /chq/:/chq/:shared -v /root:/root -v /lib/modules:/lib/modules clusterhq/fli'\" >> /root/.bashrc\n",
+              "echo \"alias fli='docker run --rm --privileged -v /chq/:/chq/:shared -v /var/log/fli:/var/log/fli -v /root:/root -v /lib/modules:/lib/modules clusterhq/fli'\" >> /root/.bashrc\n",
               "zpool create -f -o ashift=12 -O recordsize=128k -O xattr=sa -m /chq chq /dev/xvdf\n"
               ]
             ]
