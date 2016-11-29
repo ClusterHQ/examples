@@ -39,4 +39,7 @@ Visit https://flockerhub.clusterhq.com to get started with your account and auth
 
  - Vagrant 1.8.7
  - Virtualbox 5.0.26 and 5.1.8
+ 
+### Video Walkthrough
+[![VagrantVboxWalkthrough](https://img.youtube.com/vi/_3WhSLSP1A8/0.jpg)](https://www.youtube.com/watch?v=_3WhSLSP1A8)
 
