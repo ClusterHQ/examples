@@ -23,6 +23,14 @@
 
 - This guide will use existing [Docker Toolbox](https://www.docker.com/products/docker-toolbox) installation to get you started using Fli in less then 10 minutes.
 
+
+### Try `fli` by using a provided OVA (Open Virtualization Format) VM
+
+[Try `fli` with an `.ova`](fli-ova/)
+
+- This guide will walk through using a ClusterHQ provides Fli `.ova` with VirtualBox
+- Video Included!
+
 ### Try `fli` by using Ansible
 
 [Try `fli` in Ansible](fli-ansible/)
