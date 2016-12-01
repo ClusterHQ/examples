@@ -21,7 +21,8 @@ sh startfli.sh
 docker-machine ssh fli-vm
 source ~/.bashrc
 fli setup -z chq
-fli config -t /root/<YOUR_TOKEN>
+sudo vi /root/token.txt
+fli config -t /root/token.txt
 fli init MyVolumeSet
 fli create MyVolumeSet MyVolume
 ```
