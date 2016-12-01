@@ -1,6 +1,6 @@
 # using Fli from .OVA (Open Virtual Format)
 
-[!alt tag](http://i.imgur.com/mByy4H6.jpg)
+![alt tag](http://i.imgur.com/mByy4H6.jpg)
 
 ## Use `.ova` to lauch a Fli node.
 
