@@ -25,6 +25,8 @@ sudo vi /root/token.txt
 fli config -t /root/token.txt
 fli init MyVolumeSet
 fli create MyVolumeSet MyVolume
+fli sync MyVolumeSet
+fli fetch <EXISTING-VOLUMESET>
 ```
 
 ## Cleanup
