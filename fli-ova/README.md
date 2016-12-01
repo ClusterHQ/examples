@@ -2,7 +2,7 @@
 
 ![alt tag](http://i.imgur.com/mByy4H6.jpg)
 
-## Use `.ova` to lauch a Fli node.
+## Use `.ova` to launch a Fli client node.
 
 ### VirutalBox
 
@@ -40,6 +40,6 @@ fli fetch <EXISTING-VOLUMESET>
 
 ### Other OVA/OVF support hypervisors
 
-The `.ova` is a OVA 1.0 `.ova` with a `vmdk`. We havent tried the `.ova` on other platforms withs OVA support yet, so please let us know. This `.ova` may work with VMWare, XenServer, Amazon ECS and others, so please let us know if we havent tried it yet.
+The `.ova` is a OVA 1.0 `.ova` with a `vmdk`. We haveni't tried the `.ova` on other platforms with OVA support yet, so please let us know. This `.ova` may work with VMWare, XenServer, Amazon ECS and others, so please let us know if we havent tried it yet.
 
 
