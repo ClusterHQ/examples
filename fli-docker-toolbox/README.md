@@ -15,7 +15,7 @@ cd examples/fli-docker-toolbox
 sh startfli.sh
 ```
 
-## Use Fli
+## Configure Fli
 
 ```
 docker-machine ssh fli-vm
@@ -23,6 +23,11 @@ source ~/.bashrc
 fli setup -z chq
 sudo vi /root/token.txt
 fli config -t /root/token.txt
+```
+
+## Use Fli
+
+```
 fli init MyVolumeSet
 fli create MyVolumeSet MyVolume
 fli sync MyVolumeSet
