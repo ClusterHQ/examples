@@ -16,7 +16,7 @@ sh startfli.sh
 ## Use Fli
 
 ```
-docker-machine ssh flivm
+docker-machine ssh fli-vm
 fli setup -z chq
 fli config -t /root/<YOUR_TOKEN>
 fli init MyVolumeSet

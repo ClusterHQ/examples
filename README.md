@@ -19,9 +19,9 @@
 
 ### Try `fli` by using the Docker Toolbox
 
-- This guide will use existing [Docker Toolbox](https://www.docker.com/products/docker-toolbox) installation to get you started using Fli in less then 10 minutes.
+[Try `fli` with Docker Toolbox ](fli-docker-toolbox/)
 
-[Try `fli` with Docker Toolbox ](fli-docker-toolbox/) 
+- This guide will use existing [Docker Toolbox](https://www.docker.com/products/docker-toolbox) installation to get you started using Fli in less then 10 minutes.
 
 ### Try `fli` by using Ansible
 
