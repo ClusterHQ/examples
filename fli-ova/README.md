@@ -44,6 +44,7 @@ You can also follow this video which walks through the above steps.
 Setup Fli
 ```
 sudo su
+docker pull clusterhq/fli #make sure fli is up to date.
 fli setup -z chq
 sudo vi /root/token.txt
 fli config -t /root/token.txt
