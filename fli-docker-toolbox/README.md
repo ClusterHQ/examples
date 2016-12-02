@@ -51,3 +51,6 @@ or
 ```
 sh cleanup.sh
 ```
+
+## Video Walkthrough
+[![RunFliWalkthrough](https://img.youtube.com/vi/PmV5okBfKW0/0.jpg)](https://www.youtube.com/watch?v=PmV5okBfKW0)
