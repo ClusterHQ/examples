@@ -10,9 +10,7 @@ Install Docker Toolbox
 Run the install
 
 ```
-git clone https://github.com/ClusterHQ/examples
-cd examples/fli-docker-toolbox
-sh startfli.sh
+curl -sSL https://runfli.clusterhq.com/startfli.sh | sh
 ```
 
 ## Configure Fli
