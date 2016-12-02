@@ -22,6 +22,7 @@
 [Try `fli` with Docker Toolbox ](fli-docker-toolbox/)
 
 - This guide will use existing [Docker Toolbox](https://www.docker.com/products/docker-toolbox) installation to get you started using Fli in less then 10 minutes.
+- Video Included!
 
 
 ### Try `fli` by using a provided OVA (Open Virtualization Format) VM
