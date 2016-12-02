@@ -64,4 +64,8 @@ The `.ova` is a OVA 1.0 `.ova` with a `vmdk`. We haveni't tried the `.ova` on ot
 
 ### Known Issues / Errors
 
-- If you issue the command `fli setup -z chq` where Docker outputes and error about `device or resource busy` related to `aufs`, try and restart docker with `systemctl restart docker` and the problem should go away.
+- If you issue the command `fli setup -z chq` and Docker outputs an error along the line of:
+
+> `Driver aufs failed to remove root filesytem ... aufs: unmount error after retried... device or resource busy` 
+
+Restarting the docker daemon with `systemctl restart docker` should make the problem go away.
