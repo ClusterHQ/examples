@@ -6,14 +6,29 @@
 
 ### VirutalBox
 
-Download `.ova` from here
- - https://s3.amazonaws.com/clusterhq/flockerhub-client/ova/fli-ubuntu1604.ova
+#### Download `.ova`
+
+(1.2GB) OVA with Pre-install ZPOOL
+ - https://s3-eu-west-1.amazonaws.com/clusterhq/flockerhub-client/ova/fli-ubuntu1604.ova
+
+(960MB) OVA without pre configured ZPOOL (need to create disk and zpool after login)
+ - https://s3-eu-west-1.amazonaws.com/clusterhq/flockerhub-client/ova/fli-ubuntu1604-no-zpool.ova
+
+
+> Note, because of the size of the `.ova` files, downloads may take over 10 minutes depending on your internet connectivity.
+
+```
+wget <OVA-URL>
+```
+
 
 1. Double Click `.ova` file
 2. Click the "Reinitialize MAC addresses" checkbox
 3. Click "Import"
 4. Double click the VM in VirtualBox once imported.
 5. Once started, login with `fli/fli` as the `username/password`
+
+> Note: if you use the `.ova` file without the pre-configured ZPOOL you must creat one. You can do this by running the following. `fallocate -l 2G $HOME/zfs.disk && zpool create -f chq $HOME/zfs.disk`
 
 You can also follow this video which walks through the above steps.
 
