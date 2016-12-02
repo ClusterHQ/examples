@@ -17,6 +17,7 @@
 
 > Note, because of the size of the `.ova` files, downloads may take over 10 minutes depending on your internet connectivity.
 
+Click on the link above, or use something like `curl` or `wget`.
 ```
 wget <OVA-URL>
 ```
