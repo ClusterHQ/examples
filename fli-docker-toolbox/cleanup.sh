@@ -10,4 +10,4 @@ else
   exit 1
 fi
 
-docker-machine rm fli-vm
+docker-machine rm -f fli-vm
