@@ -10,7 +10,7 @@ else
   exit 1
 fi
 
-docker-machine create -d virtualbox --virtualbox-boot2docker-url https://releases.rancher.com/os/latest/rancheros.iso fli-vm
+docker-machine create -d virtualbox --virtualbox-boot2docker-url https://s3-eu-west-1.amazonaws.com/clusterhq/flockerhub-client/boot2dockerisos/fliclientos.iso fli-vm
 echo "y" | docker-machine ssh fli-vm "sudo ros console switch ubuntu" || true
 sleep 5 # vm restarts
 docker-machine ssh fli-vm "sudo ros service enable kernel-headers"
