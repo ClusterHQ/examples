@@ -10,7 +10,15 @@ Install Docker Toolbox
 Run the install
 
 ```
-curl -sSL https://runfli.clusterhq.com/startfli.sh | sh
+curl -sSL https://runfli.clusterhq.com/startfli | sh
+```
+
+or
+
+```
+git clone https://github.com/ClusterHQ/examples
+cd examples/fli-docker-toolbox
+sh startfli.sh
 ```
 
 ## Configure Fli
@@ -35,8 +43,11 @@ fli fetch <EXISTING-VOLUMESET>
 ## Cleanup
 
 ```
+curl -sSL https://runfli.clusterhq.com/cleanup | sh
+```
+
+or
+
+```
 sh cleanup.sh
-Docker Machine Ready...
-About to remove fli-vm
-Are you sure? (y/n): y
 ```
