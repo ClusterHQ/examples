@@ -52,9 +52,9 @@ fli config -t /root/token.txt
 
 Use Fli
 ```
-fli init MyVolumeSet
-fli create MyVolumeSet MyVolume
-fli sync MyVolumeSet
+fli init My-VolumeSet
+fli create My-VolumeSet My-Volume
+fli sync My-VolumeSet
 fli fetch <EXISTING-VOLUMESET>
 ```
 
