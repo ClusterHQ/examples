@@ -62,4 +62,6 @@ fli fetch <EXISTING-VOLUMESET>
 
 The `.ova` is a OVA 1.0 `.ova` with a `vmdk`. We haveni't tried the `.ova` on other platforms with OVA support yet, so please let us know. This `.ova` may work with VMWare, XenServer, Amazon ECS and others, so please let us know if we havent tried it yet.
 
+### Known Issues / Errors
 
+- If you issue the command `fli setup -z chq` where Docker outputes and error about `device or resource busy` related to `aufs`, try and restart docker with `systemctl restart docker` and the problem should go away.
