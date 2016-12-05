@@ -12,10 +12,12 @@ Install VirtualBox: https://www.virtualbox.org/wiki/Downloads
 
 #### Download `.ova`
 
-(1.2GB) OVA with a pre-configured ZPOOL: `chq`
+You have 2 different options for downloads. One is slightly smaller than the other which may reduce the download time, but it adds one extra step after you start the VM.
+
+1. (1.2GB) OVA with a pre-configured ZPOOL named `chq`, all you need to do is start using Fli.
  - https://s3-eu-west-1.amazonaws.com/clusterhq/flockerhub-client/ova/fli-ubuntu1604.ova
 
-(960MB) OVA without a pre-configured ZPOOL (You will need to create disk and zpool after login)
+2. (960MB) OVA without a pre-configured ZPOOL, you will need to create disk with `fallocate` and a zpool with `zpool create` after login
  - https://s3-eu-west-1.amazonaws.com/clusterhq/flockerhub-client/ova/fli-ubuntu1604-no-zpool.ova
 
 > Note, because of the size of the `.ova` files, downloads may take over 10 minutes depending on your internet connectivity.
@@ -33,7 +35,7 @@ Once the `.ova` is downloaded:
 4. Double click the VM in VirtualBox once imported to start it.
 5. Once started, login with `fli/fli` as the `username/password`
 
-> Note: if you use the `.ova` file without the pre-configured ZPOOL you must creat one. You can do this by running the following. `fallocate -l 2G $HOME/zfs.disk && zpool create -f chq $HOME/zfs.disk`
+> Note: if you use the `.ova` file _without the pre-configured ZPOOL_ you must creat one. You can do this by running the following. `fallocate -l 2G $HOME/zfs.disk && zpool create -f chq $HOME/zfs.disk` BEFORE using `fli setup -z chq`
 
 You can also follow this video which walks through the above steps.
 
