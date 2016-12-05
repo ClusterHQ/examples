@@ -24,3 +24,6 @@ root@ec2node$ fli setup -z chq
 root@ec2node$ fli setup config -t /root/your.token
 root@ec2node$ fli init My-First-Volumeset
 ```
+# Video Walk-through
+
+[![RunFliCloudFormationWalkthrough](https://img.youtube.com/vi/hE3P-hkNUR8/0.jpg)](https://www.youtube.com/watch?v=hE3P-hkNUR8)
