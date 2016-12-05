@@ -16,6 +16,7 @@
 [Try `fli` with CloudFormation ](fli-cloudformation/)
 
 - This guide walks through using an EC2 VM to get you started with Fli and utilizes Amazon Web Services CloudFormations which requires an AWS account. [Sign up for AWS for FREE here](https://aws.amazon.com/free/). 10-15 minutes.
+- Video Included!
 
 ### Try `fli` by using the Docker Toolbox
 
