@@ -7,14 +7,16 @@ Install Docker Toolbox
 
 ## Start Fli
 
-Run the install
+You can use 2 different options run the install, either one will work, the 1st being the fastest, while the second will pull the code locally to your laptop if your interested in editing or contributing. 
 
+1.
 ```
 curl -sSL https://runfli.clusterhq.com/startfli | sh
 ```
 
 or
 
+2.
 ```
 git clone https://github.com/ClusterHQ/examples
 cd examples/fli-docker-toolbox
