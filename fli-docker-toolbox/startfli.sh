@@ -14,8 +14,8 @@ docker-machine create -d virtualbox --virtualbox-boot2docker-url https://s3-eu-w
 (echo "y" | docker-machine ssh fli-vm "sudo ros console switch ubuntu") || true && \
 sleep 3 && docker-machine ssh fli-vm "sudo ros service enable kernel-headers" && \
 docker-machine ssh fli-vm "sudo ros service up -d kernel-headers" && \
-docker-machine ssh fli-vm "sudo apt update -y -qq" && \
-docker-machine ssh fli-vm "sudo apt install -y -qq zfs" && \
+docker-machine ssh fli-vm "sudo apt update --yes -qq" && \
+docker-machine ssh fli-vm "sudo apt install --yes -qq zfs" && \
 docker-machine ssh fli-vm "sudo ros config set rancher.modules [zfs]" && \
 docker-machine ssh fli-vm "sudo ros config set runcmd \"[[sh, -c, '[ -f /etc/zfs/zpool.cache ] && zpool import -c /etc/zfs/zpool.cache -a']]\"" && \
 docker-machine ssh fli-vm "sudo modprobe zfs" && \
