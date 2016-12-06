@@ -31,10 +31,6 @@
 
 - This guide assumes you already have a Ubuntu 16.04 machine setup that want Fli on and want to use Ansible to install and run Fli commands. With a pre-installed Ubunutu 16.04 machine, this takes about 10 minutes.
 
-### Try `fli` by using Terraform
-
-- Coming soon...
-
 ## Support
 
 - Submit a issue or PR on GitHub. We'd love your help.
