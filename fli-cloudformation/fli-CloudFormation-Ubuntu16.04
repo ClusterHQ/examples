@@ -108,6 +108,9 @@
         "PV64": "ami-d051c4c7",
         "HVM64": "ami-29f96d3e"
       },
+      "us-east-2": {
+        "HVM64": "ami-4ac59e2f"
+      },
       "us-west-2": {
         "PV64": "ami-7905ca19",
         "HVM64": "ami-114b8471"
