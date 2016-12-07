@@ -118,8 +118,8 @@
         "HVM64": "ami-114b8471"
       },
       "us-west-1": {
-        "PV64": "ami-7905ca19",
-        "HVM64": "ami-114b8471"
+        "PV64": "NOT_SUPPORTED",
+        "HVM64": "ami-bcb9eedc"
       },
       "eu-west-1": {
         "PV64": "ami-44eb8637",
