@@ -1,0 +1,50 @@
+version: '2'
+services:
+  cassandra-1:
+    hostname: cassandra-1
+    image: cassandra
+    links:
+      - cassandra-2
+      - cassandra-3
+    container_name: cassandra-1
+    environment:
+      CASSANDRA_BROADCAST_ADDRESS: "cassandra-1"
+    ports:
+    - 7000
+    volumes:
+    - 'cassandra1:/var/lib/cassandra'
+    restart: always
+  cassandra-2:
+    hostname: cassandra-2
+    image: cassandra
+    links:
+      - cassandra-3
+    container_name: cassandra-2
+    environment:
+      CASSANDRA_BROADCAST_ADDRESS: "cassandra-2"
+      CASSANDRA_SEEDS: "cassandra-1"
+    ports:
+    - 7000
+    volumes:
+    - 'cassandra2:/var/lib/cassandra'
+    restart: always
+  cassandra-3:
+    hostname: cassandra-3
+    image: cassandra
+    container_name: cassandra-3
+    environment:
+      CASSANDRA_BROADCAST_ADDRESS: "cassandra-3"
+      CASSANDRA_SEEDS: "cassandra-1"
+    ports:
+    - 7000
+    volumes:
+    - 'cassandra3:/var/lib/cassandra'
+    restart: always
+
+volumes:
+  cassandra1:
+    driver: local
+  cassandra2:
+    driver: local
+  cassandra3:
+    driver: local

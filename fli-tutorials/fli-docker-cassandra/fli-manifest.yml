@@ -1,0 +1,15 @@
+docker_app: cassandra.yml
+
+flocker_hub:
+    endpoint: https://data.flockerhub.clusterhq.com
+
+volumes:
+    - name: cassandra1
+      snapshot: cassandra-snap-1
+      volumeset: cassandra-vs
+    - name: cassandra2
+      snapshot: cassandra-snap-2
+      volumeset: cassandra-vs
+    - name: cassandra3
+      snapshot: cassandra-snap-3
+      volumeset: cassandra-vs
