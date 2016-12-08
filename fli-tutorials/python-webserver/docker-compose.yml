@@ -1,0 +1,13 @@
+version: '2'
+services:
+  python-webserver:
+    build: .
+    image: python-webserver
+    ports:
+      - "8000"
+    volumes:
+      - tmp-data:/tmp/data
+      
+volumes:
+  tmp-data:
+    driver: local
